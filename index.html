@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TMS 9918 Register Calculator</title>
+    <meta name="author" content="Saad Azim">
+    <link href="css/main.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div id="divWrapper">
+      <div id="divHeader">
+        <h3>T<span class="spanLarge">exas </span>I<span class="spanLarge">nstruments</span> TMS9918 VDC Register Calculator <span id="spanVersion">v 0.8</span></h3>
+        <h5>Updated: 2022.10.19</h5>
+        <h5>By Saad Azim</h5>
+      </div>
+      <div>
+        <select id="selectVDC">
+          <option value="tms9918" selected>TMS9918</option>
+          <option value="sega8VDP">SEGA 315-5124 - Mark III/Master System, Game Gear</option>
+          <option value="sega16VDP">SEGA 315-5315 - Mega Drive/Genesis</option>
+          <option value="sega32XVDP">SEGA 315-5818 - 32X</option>
+        </select>
+      </div>
+      <!--<div id="divContent"></div>-->
+    </div>
+    <script src="js/tms9918Calc.js"></script>
+    <script>
+      window.onload=initApp;
+    </script>
+  </body>
+</html>
