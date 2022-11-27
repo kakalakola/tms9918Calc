@@ -17,6 +17,7 @@ textarea{box-sizing:border-box;width:100%;height:10em;font-size:.8em;margin:0;pa
 @media only screen and (max-width:600px){
   #divWrapper{width:100%;min-width:320px;}
   .spanLarge{display:none;}
+  #selectVDC{display:block;}
 }
 #spanVersion{font-size:0.85em;color:#aaa;float:right;}
 /*.unused needs to override ... other stuff*/
