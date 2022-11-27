@@ -1,5 +1,9 @@
 # Texas Instruments TMS9918 VDC Register Calculator
-(I need to find a better name)
+(I still need to find a better name)
+
+Version 0.85
+ - Added option to hide unused registers
+ - Cleaned up code, slightly
 
 Version 0.8
  - Initial Upload
