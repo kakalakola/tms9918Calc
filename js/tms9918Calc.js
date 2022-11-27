@@ -9,6 +9,7 @@ const chip={'tms9918':{
             {
               'title':'Register 00'
               ,'description':'Mode Control 01'
+              ,'id':'register_00'
               ,'content':[
                 {'desc':'x'}
                 ,{'desc':'x'}
@@ -22,6 +23,7 @@ const chip={'tms9918':{
             }
             ,{
               'title':'Register 01'
+              ,'id':'register_01'
               ,'description':'Mode Control 02'
               ,'content':[
                 {'desc':'Video RAM 4Kb|16Kb','type':'check','checked':true}
@@ -37,6 +39,7 @@ const chip={'tms9918':{
             }
             ,{
               'title':'Register 02'
+              ,'id':'register_02'
               ,'description':'Tile Map Base Address'
               ,'content':[
                 {'desc':'x'}
@@ -49,12 +52,14 @@ const chip={'tms9918':{
             }
             ,{
               'title':'Register 03'
+              ,'id':'register_03'
               ,'description':'Color Table Base Address'
               ,'content':[{'desc':'Address (multiple of $0040): $','type':'text'}]
               ,'note':'Bits 7-0 corresponds to bits 13-6 of the address.'
             }
             ,{
               'title':'Register 04'
+              ,'id':'register_04'
               ,'description':'BG Tile Base Address'
               ,'content':[
                 {'desc':'x'}
@@ -68,6 +73,7 @@ const chip={'tms9918':{
             }
             ,{
               'title':'Register 05'
+              ,'id':'register_05'
               ,'description':'Sprite Attribute Table Base Address'
               ,'content':[
                 {'desc':'x'}
@@ -77,6 +83,7 @@ const chip={'tms9918':{
             }
             ,{
               'title':'Register 06'
+              ,'id':'register_06'
               ,'description':'Sprite Tile Base Address'
               ,'content':[
                 {'desc':'x'}
@@ -90,6 +97,7 @@ const chip={'tms9918':{
             }
             ,{
               'title':'Register 07'
+              ,'id':'register_07'
               ,'description':'Text & Background Color'
               ,'content':[
                 {'desc':'Text color (in text mode) ','type':'select'
@@ -128,6 +136,7 @@ const chip={'tms9918':{
             {
               'title':'Register 00'
               ,'description':'Mode Control 01'
+              ,'id':'register_00'
               ,'content':[
                 {'desc':'Vertical scroll lock','type':'check'}
                 ,{'desc':'Horizontal scroll lock','type':'check'}
@@ -143,6 +152,7 @@ const chip={'tms9918':{
             ,{
               'title':'Register 01'
               ,'description':'Mode Control 02'
+              ,'id':'register_01'
               ,'content':[
                 {'desc':'Video RAM 4Kb|16Kb','type':'check','checked':true}
                 ,{'desc':'Display enable','type':'check'}
@@ -158,6 +168,7 @@ const chip={'tms9918':{
             ,{
               'title':'Register 02'
               ,'description':'Tile Map Base Address'
+              ,'id':'register_02'
               ,'content':[
                 {'desc':'x','checked':true}
                 ,{'desc':'x','checked':true}
@@ -171,6 +182,7 @@ const chip={'tms9918':{
             ,{
               'title':'Register 03'
               ,'description':'Color Table Base Address'
+              ,'id':'register_03'
               ,'content':[
                 {'desc':'Color table base address : $','type':'text','maxLength':'2','defaultValue':'ff'}
               ]
@@ -180,6 +192,7 @@ const chip={'tms9918':{
             ,{
               'title':'Register 04'
               ,'description':'BG Tile Base Address'
+              ,'id':'register_04'
               ,'content':[
                 {'desc':'Background tile base address : $','type':'text','maxLength':'2','defaultValue':'ff'}
               ]
@@ -189,6 +202,7 @@ const chip={'tms9918':{
             ,{
               'title':'Register 05'
               ,'description':'Sprite Attribute Table Base Address'
+              ,'id':'register_05'
               ,'content':[
                 {'desc':'x','checked':true}
                 ,{'desc':'Address (multiple of $0100): $','type':'text'}
@@ -199,6 +213,7 @@ const chip={'tms9918':{
             ,{
               'title':'Register 06'
               ,'description':'Sprite Tile Base Address'
+              ,'id':'register_06'
               ,'content':[
                 {'desc':'x','checked':true}
                 ,{'desc':'x','checked':true}
@@ -214,6 +229,7 @@ const chip={'tms9918':{
             ,{
               'title':'Register 07'
               ,'description':'Overscan/Background Color'
+              ,'id':'register_07'
               ,'content':[
                 {'desc':'x','checked':true}
                 ,{'desc':'x','checked':true}
@@ -233,6 +249,7 @@ const chip={'tms9918':{
             ,{
               'title':'Register 08'
               ,'description':'Background X Scroll'
+              ,'id':'register_08'
               ,'content':[{'desc':'Background X Scroll: $','type':'text','maxLength':'2','defaultValue':'00'}]
               ,'note':'Nothing to calculate.'
               ,'noOutput':true
@@ -240,6 +257,7 @@ const chip={'tms9918':{
             ,{
               'title':'Register 09'
               ,'description':'Background Y Scroll'
+              ,'id':'register_09'
               ,'content':[{'desc':'Background Y Scroll: $','type':'text','maxLength':'2','defaultValue':'00'}]
               ,'note':'Nothing to calculate. Depending on the model SMS/SMS2, the vertical resolution might be 192, 224, or 240 lines.'
               ,'noOutput':true
@@ -247,6 +265,7 @@ const chip={'tms9918':{
             ,{
               'title':'Register 0A'
               ,'description':'Scanline Counter'
+              ,'id':'register_0a'
               ,'content':[{'desc':'Scanline Counter: $','type':'text','maxLength':'2','defaultValue':'00'}]
               ,'note':'Nothing to calculate. Depending on the model SMS/SMS2, the vertical resolution might be 192, 224, or 240 lines. Setting line counter to "0" seems to cause IRQ to trigger non stop.'
               ,'noOutput':true
@@ -279,6 +298,7 @@ const chip={'tms9918':{
             {
               'title':'Register 00'
               ,'description':'Mode Control 01'
+              ,'id':'register_00'
               ,'content':[
                 {'desc':'x'}
                 ,{'desc':'x'}
@@ -294,6 +314,7 @@ const chip={'tms9918':{
             ,{
               'title':'Register 01'
               ,'description':'Mode Control 02'
+              ,'id':'register_01'
               ,'content':[
                 {'desc':'Video RAM 64Kb|128Kb','type':'check','unused':true}
                 ,{'desc':'Display enable','type':'check'}
@@ -309,6 +330,7 @@ const chip={'tms9918':{
             ,{
               'title':'Register 02'
               ,'description':'Scroll A Tile Map Base Address'
+              ,'id':'register_02'
               ,'content':[
                 {'desc':'x'}
                 ,{'desc':'Use extended ($10000+) address','type':'check','unused':true}
@@ -322,6 +344,7 @@ const chip={'tms9918':{
             ,{
               'title':'Register 03'
               ,'description':'Window Tile Map Base Address'
+              ,'id':'register_03'
               ,'content':[
                 {'desc':'x'}
                 ,{'desc':'Use extended ($10000+) address','type':'check','unused':true}
@@ -333,6 +356,7 @@ const chip={'tms9918':{
             ,{
               'title':'Register 04'
               ,'description':'Scroll B Tile Map Base Address'
+              ,'id':'register_04'
               ,'content':[
                 {'desc':'Use extended ($10000+) address','type':'check','unused':true}
                 ,{'desc':'x'}
@@ -346,6 +370,7 @@ const chip={'tms9918':{
             ,{
               'title':'Register 05'
               ,'description':'Sprite Attribute Table Base Address'
+              ,'id':'register_05'
               ,'content':[
                 {'desc':'Use extended ($10000+) address','type':'check','unused':true}
                 ,{'desc':'Address (multiple of $0200): $','type':'text'}
@@ -355,6 +380,7 @@ const chip={'tms9918':{
             ,{
               'title':'Register 06','unused':true
               ,'description':'Extended Sprite Tile Base Address'
+              ,'id':'register_06'
               ,'content':[
                 {'desc':'x'}
                 ,{'desc':'x'}
@@ -370,6 +396,7 @@ const chip={'tms9918':{
             ,{
               'title':'Register 07'
               ,'description':'Background Color'
+              ,'id':'register_07'
               ,'content':[
                 {'desc':'x'}
                 ,{'desc':'x'}
@@ -387,24 +414,28 @@ const chip={'tms9918':{
             ,{
               'title':'Register 08','unused':true
               ,'description':'Background X Scroll in Mode IV'
+              ,'id':'register_08'
               ,'content':[{'desc':'Background X Scroll (8-bit): $','type':'text','maxLength':'2','defaultValue':'00','unused':true}]
               ,'note':'Ignored in Mode 5. Here for the sake of documentation.'
             }
             ,{
               'title':'Register 09','unused':true
               ,'description':'Background Y Scroll in Mode IV'
+              ,'id':'register_09'
               ,'content':[{'desc':'Background Y Scroll (8-bit): $','type':'text','maxLength':'2','defaultValue':'00','unused':true}]
               ,'note':'Ignored in Mode 5. Here for the sake of documentation.'
             }
             ,{
               'title':'Register 0A'
               ,'description':'Scanline Counter'
+              ,'id':'register_0a'
               ,'content':[{'desc':'Scanline counter: $','type':'text','maxLength':'2','defaultValue':'00'}]
               ,'note':'NOTE: Once set, the HBLank line counter can only be updated in the middle of an active HBlank. Furthermore, a change to HBlank counter takes an additional interrupt to become active. For example, if the line counter is set to $10, and changed to $07 during the first H interrupt at line $10, there will be a second interrup at line $20, and the THIRD H interrupt will be at line 27.'
             }
             ,{
               'title':'Register 0B'
               ,'description':'Mode Set Register 03'
+              ,'id':'register_0b'
               ,'content':[
                 {'desc':'x'}
                 ,{'desc':'x'}
@@ -423,6 +454,7 @@ const chip={'tms9918':{
             ,{
               'title':'Register 0C'
               ,'description':'Mode Set Register 04'
+              ,'id':'register_0c'
               ,'content':[
                 {'desc':'Horizontal Resolution 256|320 pixel','type':'check'}
                 ,{'desc':'Might do something with HSync','type':'check','unused':true}
@@ -439,6 +471,7 @@ const chip={'tms9918':{
             ,{
               'title':'Register 0D'
               ,'description':'Horizontal Scroll Data Address'
+              ,'id':'register_0d'
               ,'content':[
                 {'desc':'x'}
                 ,{'desc':'Use extended ($10000+) address','type':'check','unused':true}
@@ -449,6 +482,7 @@ const chip={'tms9918':{
             ,{
               'title':'Register 0E','unused':true
               ,'description':'Nametable Tile Base Address Extension'
+              ,'id':'register_0e'
               ,'content':[
                 {'desc':'x'}
                 ,{'desc':'x'}
@@ -464,12 +498,15 @@ const chip={'tms9918':{
             ,{
               'title':'Register 0F'
               ,'description':'Address Auto-Increment'
+              ,'id':'register_0f'
               ,'content':[{'desc':'VRAM address auto increment after read/write: $','type':'text','maxLength':'2','defaultValue':'02'}]
               ,'note':'Usually set to $02 (Word)'
             }
             ,{
               'title':'Register 10'
-              ,'description':'Map Size (applies to both layers)','content':[
+              ,'description':'Map Size (applies to both layers)'
+              ,'id':'register_10'
+              ,'content':[
                 {'desc':'x'}
                 ,{'desc':'x'}
                 ,{'desc':'Height ','type':'select'
@@ -486,6 +523,7 @@ const chip={'tms9918':{
             ,{
               'title':'Register 11'
               ,'description':'Window Horizontal Position (in 2x Tiles)'
+              ,'id':'register_11'
               ,'content':[
                 {'desc':'Right','type':'check'}
                 ,{'desc':'x'}
@@ -497,6 +535,7 @@ const chip={'tms9918':{
             ,{
               'title':'Register 12'
               ,'description':'Window Vertical Position (in 2x Tiles)'
+              ,'id':'register_12'
               ,'content':[
                 {'desc':'Down','type':'check'}
                 ,{'desc':'x'}
@@ -513,6 +552,7 @@ const chip={'tms9918':{
             ,{
               'title':'General VDP Read/Write'
               ,'description':'VDP Command Calculator'
+              ,'id':'command_calculator'
               ,'outputSize':8
               ,'content':[
                 {'desc':'VRAM Address ($0000-$FFFF): $','type':'text'}
@@ -528,6 +568,7 @@ const chip={'tms9918':{
             ,{
               'title':'CRAM Read/Write'
               ,'description':'VDP Command Calculator'
+              ,'id':'cram_command_calculator'
               ,'outputSize':8
               ,'content':[
                 {'desc':'Palette ','type':'select'
@@ -569,6 +610,7 @@ const chip={'tms9918':{
             {
               'title':'Register $4000'
               ,'description':'Interrupt Control'
+              ,'id':'register_4000'
               ,'content':[
                 {'desc':'PWM timer interrupt Enable','type':'check'}
                 ,{'desc':'CMD - Command interrupt Enable','type':'check'}
@@ -592,6 +634,7 @@ const chip={'tms9918':{
             ,{
               'title':'Register $4100'
               ,'description':'Video Mode Control'
+              ,'id':'register_4100'
               ,'content':[
                 {'desc':'Video Mode (PAL|NTSC)','type':'check'}
                 ,{'desc':'x'}
@@ -616,6 +659,7 @@ const chip={'tms9918':{
             ,{
               'title':'Register $4102'
               ,'description':'Screen Shift Control Register'
+              ,'id':'register_4102'
               ,'content':[
                 {'desc':'x'}
                 ,{'desc':'x'}
@@ -639,6 +683,7 @@ const chip={'tms9918':{
             ,{
               'title':'Register $4104'
               ,'description':'Auto Fill Length Register'
+              ,'id':'register_4104'
               ,'content':[
                 {'desc':'Amount: $','type':'text','maxLength':'2','defaultValue':'00'}
               ]
@@ -647,6 +692,7 @@ const chip={'tms9918':{
             ,{
               'title':'Register $4106'
               ,'description':'Auto Fill Start Address Register'
+              ,'id':'register_4106'
               ,'content':[
                 {'desc':'Address: $','type':'text'}
               ]
@@ -655,6 +701,7 @@ const chip={'tms9918':{
             ,{
               'title':'Register $4108'
               ,'description':'Auto Fill Data Register'
+              ,'id':'register_4108'
               ,'content':[
                 {'desc':'Data: $','type':'text'}
               ]
@@ -663,6 +710,7 @@ const chip={'tms9918':{
             ,{
               'title':'Register $410A'
               ,'description':'Frame Buffer Control Register'
+              ,'id':'register_410a'
               ,'content':[
                 {'desc':'V Blank Flag, read only','type':'check','unused':true}
                 ,{'desc':'H Blank Flag, read only','type':'check','unused':true}
@@ -681,7 +729,6 @@ const chip={'tms9918':{
                 ,{'desc':'Frame Buffer Access Denied|Approved, read only','type':'check','unused':true}
                 ,{'desc':'Transfer DRAM 0|DRAM 1 to the VDP side','type':'check'}
               ]
-              ,'note':'When set, scrolls the visible screen by 1 pixel to the left. Unless one of the address in the line table data is #$FF.'
             }
             ,{
               'title':'Output'
@@ -697,6 +744,7 @@ const chip={'tms9918':{
           ]
         }
       }
+
       //Utility functions to generate HTML
       ,generateCheck=function(c){
         'use strict';
@@ -734,6 +782,9 @@ const chip={'tms9918':{
 
         //I'm surprised this works, but I'm not complaining
         inCheck.checked=(c.checked?true:null);
+        if(c.checked){
+          inCheck.setAttribute('checked','true')
+        }
 
         inDiv.appendChild(inCheck);
         inDiv.appendChild(inDesc);
@@ -820,48 +871,54 @@ const chip={'tms9918':{
         return outDiv;
       }
 
-      //Utility function to process numbers
       ,intToHex=function(num,pad){
         let output='00000000'+(Number(num).toString(16));
         output=output.substring(output.length-(pad===undefined?4:pad));
         return output;
       }
 
-      ,processBitArray=function(start,size){
+      ,processBitArray=function(pId,start,size,shift){
         'use strict';
-        let output=0
+        let register=document.getElementById(pId).getElementsByTagName('input')
+            ,output=0
             ,i=0
             ;
-        for(i=0;i<size;i+=1){
-          output+=(document.getElementsByTagName('input')[i+start].checked?1:0)<<size-(i+1);
+        for(i;i<size;i+=1){
+          output+=(register[i+start].checked?1:0)<<size-(i+1);
         }
-        return output;
+        return (output<<(shift==='undefined'?0:shift));
       }
 
-      ,processAddress=function(start,bitStart,bitEnd,destinationOffset){
+      ,processAddress=function(pId,index,bitStart,bitEnd,destinationOffset){
         'use strict';
-        let addressLoc=document.getElementsByTagName('input')[start]
+        let addressLoc=document.getElementById(pId).getElementsByTagName('input')[index]
             ,address=parseInt(addressLoc.value,16)
             ,min=1<<bitEnd
             ,max=min
             ,i=bitEnd
             ;
-        //Check for NaN
+
         address=(address!==address?0:address);
         for(i=bitEnd;i<=bitStart;i+=1){
           max+=1<<i;
         }
-
         address=(address-(address%min))%max;
-
         addressLoc.value=intToHex(address,parseInt(addressLoc.maxLength));
         return (address>>(destinationOffset===undefined?bitEnd:destinationOffset));
       }
-      ,readHex=function(index){
+
+      ,processSelect=function(pId,index){
         'use strict';
-        let output=parseInt(document.getElementsByTagName('input')[index].value,16);
+        return (document.getElementById(pId).getElementsByTagName('select')[index].value);
+      }
+
+      ,readHex=function(pId,index){
+        'use strict';
+        let inputField=document.getElementById(pId).getElementsByTagName('input')[(index===undefined?0:index)]
+            ,output=parseInt(inputField.value,16)
+            ;
         output=(output!==output?0:output);
-        document.getElementsByTagName('input')[index].value=intToHex(output,document.getElementsByTagName('input')[index].maxLength);
+        inputField.value=intToHex(output,inputField.maxLength);
         return output;
       }
 
@@ -885,8 +942,9 @@ const chip={'tms9918':{
       ,processTMS9918=function(order){
         'use strict';
         let outCode='  ;TMS9918 Register Configuration\n'
-            ,outputStat=((document.getElementsByTagName('input')[44].checked?1:0)<<1)+(document.getElementsByTagName('input')[45].checked?1:0)
-            ,reverse=(document.getElementsByTagName('input')[46].checked?1:0)
+            ,outputControl=document.getElementById('output')
+            ,outputStat=((outputControl.getElementsByTagName('input')[0].checked?1:0)<<1)+(outputControl.getElementsByTagName('input')[1].checked?1:0)
+            ,reverse=(outputControl.getElementsByTagName('input')[2].checked?1:0)
             ;
         data={
           'output':[]
@@ -895,32 +953,32 @@ const chip={'tms9918':{
 
         if(order){
           //Process register 00
-          data.output[0]=processBitArray(0,8);
+          data.output[0]=processBitArray('register_00',0,8);
           updateOutput(0);
           //Process register 01
-          data.output[1]=processBitArray(9,8);
+          data.output[1]=processBitArray('register_01',0,8);
           updateOutput(1);
           //Process register 02
-          data.output[2]=(processBitArray(18,4)<<4);
-          data.output[2]+=processAddress(22,13,10);
+          data.output[2]=processBitArray('register_02',0,4,4);
+          data.output[2]+=processAddress('register_02',4,13,10);
           updateOutput(2);
           //Process register 03
-          data.output[3]=processAddress(24,13,6);
+          data.output[3]=processAddress('register_03',0,13,6);
           updateOutput(3);
           //Process register 04
-          data.output[4]=(processBitArray(26,5)<<3);
-          data.output[4]+=processAddress(31,13,11);
+          data.output[4]=processBitArray('register_04',0,5,3);
+          data.output[4]+=processAddress('register_04',5,13,11);
           updateOutput(4);
           //Process register 05
-          data.output[5]=(processBitArray(33,1)<<7);
-          data.output[5]+=processAddress(34,13,7);
+          data.output[5]=processBitArray('register_05',0,1,7);
+          data.output[5]+=processAddress('register_05',1,13,7);
           updateOutput(5);
           //Process register 06
-          data.output[6]=(processBitArray(36,5)<<3);
-          data.output[6]+=processAddress(41,13,11);
+          data.output[6]=processBitArray('register_06',0,5,3);
+          data.output[6]+=processAddress('register_06',5,13,11);
           updateOutput(6);
           //Process register 07          
-          data.output[7]=(parseInt(document.getElementsByTagName('select')[1].value)<<4)+parseInt(document.getElementsByTagName('select')[2].value);
+          data.output[7]=(parseInt(processSelect('register_07',0)<<4)+parseInt(processSelect('register_07',1)));
           updateOutput(7);
 
         }else{
@@ -960,8 +1018,9 @@ const chip={'tms9918':{
         'use strict';
 
         let outCode='  ;SEGA 315-5124/315-5246 VDP Register Configuration\n'
-            ,outputStat=((document.getElementsByTagName('input')[48].checked?1:0)<<1)+(document.getElementsByTagName('input')[49].checked?1:0)
-            ,reverse=(document.getElementsByTagName('input')[50].checked?1:0)
+            ,outputControl=document.getElementById('output')
+            ,outputStat=((outputControl.getElementsByTagName('input')[0].checked?1:0)<<1)+(outputControl.getElementsByTagName('input')[1].checked?1:0)
+            ,reverse=(outputControl.getElementsByTagName('input')[2].checked?1:0)
             ;
         data={
           'output':[]
@@ -970,30 +1029,30 @@ const chip={'tms9918':{
 
         if(order){
           //Process register 00
-          data.output[0]=processBitArray(0,8);
+          data.output[0]=processBitArray('register_00',0,8);
           updateOutput(0);
           //Process register 01
-          data.output[1]=processBitArray(9,8);
+          data.output[1]=processBitArray('register_01',0,8);
           updateOutput(1);
           //Process register 02
-          data.output[2]=(processBitArray(18,4)<<4);
-          data.output[2]+=processAddress(22,13,11,10);
-          data.output[2]+=processBitArray(23,1);
+          data.output[2]=processBitArray('register_02',0,4,4);
+          data.output[2]+=(processAddress('register_02',4,13,11)<<1);
+          data.output[2]+=processBitArray('register_02',5,1);
           updateOutput(2);
           //Process register 03 - Nothing to process
           //Process register 04 - Nothing to process
           //Process register 05
-          data.output[3]=(processBitArray(27,1)<<7);
-          data.output[3]+=processAddress(28,13,8,7);
-          data.output[3]+=processBitArray(29,1);
+          data.output[3]=processBitArray('register_05',0,1,7);
+          data.output[3]+=(processAddress('register_05',1,13,8)<<1);
+          data.output[3]+=processBitArray('register_05',2,1);
           updateOutput(3);
           //Process register 06
-          data.output[4]=(processBitArray(31,5)<<3);
-          data.output[4]+=processAddress(36,13,13,11);
-          data.output[4]+=processBitArray(37,2);
+          data.output[4]=processBitArray('register_06',0,5,3);
+          data.output[4]+=(processAddress('register_06',5,13,13)<<2);
+          data.output[4]+=processBitArray('register_06',6,2);
           updateOutput(4);
           //Process register 07
-          data.output[5]=(processBitArray(40,4)<<4)+parseInt(document.getElementsByTagName('select')[1].value);
+          data.output[5]=(processBitArray('register_07',0,4,4)+parseInt(processSelect('register_07',0)));
           updateOutput(5);
           //Process register 08 - Nothing to process
           //Process register 09 - Nothing to process
@@ -1002,12 +1061,11 @@ const chip={'tms9918':{
           console.log('Processing output, and setting input');
         }
 
-        data.output.splice(3,0,readHex(25));
-        data.output.splice(4,0,readHex(26));
-        data.output.push(readHex(45));
-        data.output.push(readHex(46));
-        data.output.push(readHex(47));
-
+        data.output.splice(3,0,readHex('register_03'));
+        data.output.splice(4,0,readHex('register_04'));
+        data.output.push(readHex('register_08'));
+        data.output.push(readHex('register_09'));
+        data.output.push(readHex('register_0a'));
 
         data.output.forEach(function(d,i){
           data.reg.push(chip.sega8VDP.vdpRegCode[i]);
@@ -1041,14 +1099,17 @@ const chip={'tms9918':{
         'use strict';
         
         let outCode='  ;SEGA 315-5315 VDP Register Configuration'
-            ,outputStat=(document.getElementsByTagName('input')[104].checked?1:0)
-            ,clean=(document.getElementsByTagName('input')[105].checked?1:0)
-            ,reverse=(document.getElementsByTagName('input')[106].checked?1:0)
+            ,outputControl=document.getElementById('output')
+            ,outputStat=(outputControl.getElementsByTagName('input')[0].checked?1:0)
+            ,clean=(outputControl.getElementsByTagName('input')[1].checked?1:0)
+            ,reverse=(outputControl.getElementsByTagName('input')[2].checked?1:0)
             //Process VDP commands
-            ,vdpCommand=parseInt(document.getElementsByTagName('select')[8].value)
-            ,descText=document.getElementsByTagName('select')[8].parentNode.parentNode.getElementsByTagName('span')[0]
-            ,vramInput=document.getElementsByTagName('select')[8].parentNode.parentNode.getElementsByTagName('input')[0]
+            ,vdpCommand=parseInt(document.getElementById('command_calculator').getElementsByTagName('select')[0].value)
+            ,descText=document.getElementById('command_calculator').getElementsByTagName('span')[0]
+            ,vramInput=document.getElementById('command_calculator').getElementsByTagName('input')[0]
             ,vdpAddress
+            //Process VDP commands for CRAM
+            ,cramOptions=document.getElementById('cram_command_calculator').getElementsByTagName('select')
             ;
 
         data={
@@ -1057,98 +1118,98 @@ const chip={'tms9918':{
 
         if(order){
           //Process register 00
-          data.output[0]=processBitArray(0,8);
+          data.output[0]=processBitArray('register_00',0,8);
           data.output[0]+=chip.sega16VDP.vdpRegCode[0]<<8;
           updateOutput(0,4);
           //Process register 01
-          data.output[1]=processBitArray(9,8);
+          data.output[1]=processBitArray('register_01',0,8);
           data.output[1]+=chip.sega16VDP.vdpRegCode[1]<<8;
           updateOutput(1,4);
           //Process register 02
-          data.output[2]=(processBitArray(18,2)<<6);          
-          data.output[2]+=processAddress(20,15,13,10);
-          data.output[2]+=processBitArray(21,3);
+          data.output[2]=processBitArray('register_02',0,2,6);
+          data.output[2]+=(processAddress('register_02',2,15,13)<<3);
+          data.output[2]+=processBitArray('register_02',3,3);
           data.output[2]+=chip.sega16VDP.vdpRegCode[2]<<8;
           updateOutput(2,4);
           //Process register 03
-          data.output[3]=(processBitArray(25,2)<<6);
-          data.output[3]+=processAddress(27,15,11,10);
-          data.output[3]+=processBitArray(28,1);
+          data.output[3]=processBitArray('register_03',0,2,6);
+          data.output[3]+=(processAddress('register_03',2,15,11)<<1);
+          data.output[3]+=processBitArray('register_03',3,1);
           data.output[3]+=chip.sega16VDP.vdpRegCode[3]<<8;
           updateOutput(3,4);
           //Process register 04
-          data.output[4]=(processBitArray(30,5)<<3);
-          data.output[4]+=processAddress(38,15,9,9);
+          data.output[4]=processBitArray('register_04',0,5,3);
+          data.output[4]+=processAddress('register_04',5,15,13);
           data.output[4]+=chip.sega16VDP.vdpRegCode[4]<<8;
           updateOutput(4,4);
           //Process register 05
-          data.output[5]=(processBitArray(37,1)<<7);
-          data.output[5]+=processAddress(38,15,9,9);
+          data.output[5]=processBitArray('register_05',0,1,7);
+          data.output[5]+=processAddress('register_05',1,15,9);
           data.output[5]+=chip.sega16VDP.vdpRegCode[5]<<8;
           updateOutput(5,4);
           //Process register 06
-          data.output[6]=processBitArray(40,8);
+          data.output[6]=processBitArray('register_06',0,8);
           data.output[6]+=chip.sega16VDP.vdpRegCode[6]<<8;
           updateOutput(6,4);
           //Process register 07
-          data.output[7]=(processBitArray(49,2)<<6);
-          data.output[7]+=(parseInt(document.getElementsByTagName('select')[1].value)<<4);
-          data.output[7]+=parseInt(document.getElementsByTagName('select')[2].value);
+          data.output[7]=processBitArray('register_07',0,2,6);
+          data.output[7]+=(parseInt(processSelect('register_07',0))<<4);
+          data.output[7]+=parseInt(processSelect('register_07',1));
           data.output[7]+=chip.sega16VDP.vdpRegCode[7]<<8;
           updateOutput(7,4);
           //Process register 08
-          data.output[8]=readHex(52);
+          data.output[8]=readHex('register_08');
           data.output[8]+=chip.sega16VDP.vdpRegCode[8]<<8;
           updateOutput(8,4);
           //Process register 09
-          data.output[9]=readHex(54);
+          data.output[9]=readHex('register_09');
           data.output[9]+=chip.sega16VDP.vdpRegCode[9]<<8;
           updateOutput(9,4);
           //Process register 0A
-          data.output[10]=readHex(56);
+          data.output[10]=readHex('register_0a');
           data.output[10]+=chip.sega16VDP.vdpRegCode[10]<<8;
           updateOutput(10,4);
           //Process register 0B
-          data.output[11]=(processBitArray(58,5)<<3);
-          data.output[11]+=(parseInt(document.getElementsByTagName('select')[3].value)<<2);
-          data.output[11]+=parseInt(document.getElementsByTagName('select')[4].value);
+          data.output[11]=processBitArray('register_0b',0,5,3);
+          data.output[11]+=(parseInt(processSelect('register_0b',0))<<2);
+          data.output[11]+=parseInt(processSelect('register_0b',1));
           data.output[11]+=chip.sega16VDP.vdpRegCode[11]<<8;
           updateOutput(11,4);
           //Process register 0C
-          data.output[12]=(processBitArray(64,5)<<3);
-          data.output[12]+=(parseInt(document.getElementsByTagName('select')[5].value)<<1);
-          data.output[12]+=processBitArray(69,1);
+          data.output[12]=processBitArray('register_0c',0,5,3);
+          data.output[12]+=(parseInt(processSelect('register_0c',0))<<1);
+          data.output[12]+=processBitArray('register_0c',5,1); 
           data.output[12]+=chip.sega16VDP.vdpRegCode[12]<<8;
           updateOutput(12,4);
           //Process register 0D
-          data.output[13]=(processBitArray(71,2)<<6);
-          data.output[13]+=processAddress(73,15,10,10);
+          data.output[13]=processBitArray('register_0d',0,2,6);
+          data.output[13]+=processAddress('register_0d',2,15,10);
           data.output[13]+=chip.sega16VDP.vdpRegCode[13]<<8;
           //data.output[3]+=processBitArray(28,1);
           updateOutput(13,4);
           //Process register 0E
-          data.output[14]=processBitArray(75,8);
+          data.output[14]=processBitArray('register_0e',0,8);
           data.output[14]+=chip.sega16VDP.vdpRegCode[14]<<8;
           updateOutput(14,4);
           //Process register 0F
-          data.output[15]=readHex(84);
+          data.output[15]=readHex('register_0f');
           data.output[15]+=chip.sega16VDP.vdpRegCode[15]<<8;
           updateOutput(15,4);
           //Process register 10
-          data.output[16]=(processBitArray(86,2)<<6);
-          data.output[16]+=(parseInt(document.getElementsByTagName('select')[6].value)<<4);
-          data.output[16]+=(processBitArray(88,2)<<2);
-          data.output[16]+=parseInt(document.getElementsByTagName('select')[7].value);
+          data.output[16]=processBitArray('register_10',0,2,6);
+          data.output[16]+=(parseInt(processSelect('register_10',0))<<4);
+          data.output[16]+=processBitArray('register_10',2,2,2);
+          data.output[16]+=parseInt(processSelect('register_10',1));
           data.output[16]+=chip.sega16VDP.vdpRegCode[16]<<8;
           updateOutput(16,4);
           //Process register 11
-          data.output[17]=(processBitArray(91,3)<<5);
-          data.output[17]+=processAddress(94,4,0);
+          data.output[17]=processBitArray('register_11',0,3,5);
+          data.output[17]+=processAddress('register_11',3,4,0);
           data.output[17]+=chip.sega16VDP.vdpRegCode[17]<<8;
           updateOutput(17,4);
           //Process register 12
-          data.output[18]=(processBitArray(96,3)<<5);
-          data.output[18]+=processAddress(99,4,0);
+          data.output[18]=processBitArray('register_12',0,3,5);
+          data.output[18]+=processAddress('register_12',3,4,0);
           data.output[18]+=chip.sega16VDP.vdpRegCode[18]<<8;
           updateOutput(18,4);
 
@@ -1193,7 +1254,7 @@ const chip={'tms9918':{
             vramInput.setAttribute('class','textInput_2');
             vramInput.setAttribute('maxlength','2');
             vramInput.setAttribute('placeholder','00');
-            vdpAddress=processAddress(101,6,0);
+            vdpAddress=processAddress('command_calculator',0,6,0);
             break;
           case 4: //VSRAM read
           case 5: //VSRAM write
@@ -1203,7 +1264,7 @@ const chip={'tms9918':{
             vramInput.setAttribute('class','textInput_2');
             vramInput.setAttribute('maxlength','2');
             vramInput.setAttribute('placeholder','00');
-            vdpAddress=processAddress(101,6,0);
+            vdpAddress=processAddress('command_calculator',0,6,0);
             break;
           default:
             //Update text for VRAM values
@@ -1211,7 +1272,7 @@ const chip={'tms9918':{
             vramInput.setAttribute('class','textInput_4');
             vramInput.setAttribute('maxlength','4');
             vramInput.setAttribute('placeholder','0000');
-            vdpAddress=readHex(101);
+            vdpAddress=readHex('command_calculator');
         }
 
         //JavaScript works with signed integers by default. The '>>>0' converts the signed number back to an unsigned number.
@@ -1219,8 +1280,8 @@ const chip={'tms9918':{
         document.getElementsByClassName('output_8')[0].value=intToHex(vdpCommand,8);
 
         //Handle CRAM VDP command
-        vdpCommand=parseInt(document.getElementsByTagName('select')[11].value);
-        vdpAddress=(parseInt(document.getElementsByTagName('select')[9].value)<<5)+(parseInt(document.getElementsByTagName('select')[10].value)<<1);
+        vdpCommand=cramOptions[2].value;
+        vdpAddress=(parseInt(cramOptions[0].value)<<5)+(parseInt(cramOptions[1].value)<<1);
         vdpCommand=((vdpCommand&0x03c)<<2)+(((vdpCommand&3)<<30)>>>0)+((vdpAddress&0x3fff)<<16)+(vdpAddress>>14);
         document.getElementsByClassName('output_8')[1].value=intToHex(vdpCommand,8);
       }
@@ -1235,33 +1296,33 @@ const chip={'tms9918':{
 
         if(order){
           //Process register 4000
-          data.output[0]=processBitArray(0,16);
+          data.output[0]=processBitArray('register_4000',0,16);
           updateOutput(0,4);
           //Process register 4100
-          data.output[1]=(processBitArray(17,14)<<2);
-          data.output[1]+=(parseInt(document.getElementsByTagName('select')[1].value));
+          data.output[1]=processBitArray('register_4100',0,14,2);
+          data.output[1]+=(parseInt(processSelect('register_4100',0)));
           updateOutput(1,4);
           //Process register 4102
-          data.output[2]=processBitArray(32,16);
+          data.output[2]=processBitArray('register_4102',0,16);
           updateOutput(2,4);
           //Process register 4104
-          data.output[3]=readHex(49);
+          data.output[3]=readHex('register_4104');
           updateOutput(3,4);
           //Process register 4106
-          data.output[4]=readHex(51);
+          data.output[4]=readHex('register_4106');
           updateOutput(4,4);
           //Process register  4108
-          data.output[5]=readHex(53);
+          data.output[5]=readHex('register_4108');
           updateOutput(5,4);
           //Process register  410A
-          data.output[6]=processBitArray(55,16);
+          data.output[6]=processBitArray('register_410a',0,16);
           updateOutput(6,4);
 
         }else{
           console.log('Processing output, and setting input');
         }
 
-        if(document.getElementsByTagName('input')[72].checked){
+        if(document.getElementById('output').getElementsByTagName('input')[0].checked){
           outCode+='  dc.w ';
           data.output.forEach(function(o){
             outCode+='$'+intToHex(o,4)+',';
@@ -1276,11 +1337,11 @@ const chip={'tms9918':{
 
       ,outTextLabel='<span>Hexadecimal: $</span>'
       ,vdcSelect=document.getElementById('selectVDC')
+      ,toggleUnused=document.getElementById('hideUnused')
       ,wrapper=document.getElementById('divWrapper')
 
       ,checkInput=function(evt){
         'use strict';
-        //Check to see if the event was triggered by a field marked as 'output'. Eventually, I'm hoping to use data from output to reverse engineer input code.
         let order=!evt.target.classList.contains('output');
 
         switch(document.getElementById('selectVDC').value){
@@ -1311,7 +1372,9 @@ const chip={'tms9918':{
         }
         header.innerHTML=reg.title+(reg.description===undefined?'':' - '+reg.description);
         block.appendChild(header);
-
+        if(reg.id!==undefined){
+          block.id=reg.id;
+        }
 
         if(reg.content!==undefined){
           reg.content.forEach(function(c){
@@ -1325,7 +1388,7 @@ const chip={'tms9918':{
               case 'text':
                 block.appendChild(generateText(c));
                 break;
-              default: //Undefined. Basically {'desc':'x'}
+              default:
                 block.appendChild(generateCheckUndefined(c));
             }
           });
@@ -1333,39 +1396,31 @@ const chip={'tms9918':{
           if(reg.noOutput===undefined){
             if(reg.title==='Output'){
               block.appendChild(generateOutputTextArea());
+              block.id='output'
             }else{
               block.appendChild(generateOutput(reg));
             }
           }
-
-
         }
-
         if(reg.note!==undefined){
           block.appendChild(generateNote(reg));
         }
-
         container.appendChild(block);
       }
-
 
       ,initLayout=function(){
         'use strict';
         let vdc=vdcSelect.value
             ,container=document.createElement('div')
-
-            ,evt=document.createEvent('Event')
-            ,elem //elem needs to be defined *after* all the bits & pieces have been generated
-
+            //document.createEvent got deprecated
+            ,evt=new Event('change',{'bubbless':false})
             ,inDiv=document.createElement('div')
             ;
 
-        //Check to see if divContent exists. If so, delete it.
         if(document.getElementById('divContent')){
           document.getElementById('divContent').parentNode.removeChild(document.getElementById('divContent'));
         }
 
-        //Create new divContent
         container.setAttribute('id','divContent');
         document.getElementById('divWrapper').appendChild(container);
 
@@ -1379,13 +1434,31 @@ const chip={'tms9918':{
         });
 
         document.getElementById('divContent').addEventListener('change',checkInput,false);
-        evt.initEvent('change',true,true);
-        elem=document.getElementsByTagName('input')[0];
-        elem.dispatchEvent(evt);
+        document.getElementsByTagName('input')[0].dispatchEvent(evt);
+      }
+
+      ,toggleHideUnused=function(evt){
+        'use strict';
+        let unused=document.getElementsByClassName('unused')
+            ;
+        if(evt.target.checked){
+          Array.from(unused).forEach(function(u){
+            u.className='unused hidden';
+            if(u.getElementsByTagName('input')[0].hasAttribute('checked')){
+              u.getElementsByTagName('input')[0].checked=true;
+            }else {
+              u.getElementsByTagName('input')[0].checked=false;
+            }
+          });
+        }else{
+          Array.from(unused).forEach(function(u){u.className='unused';});
+        }
       }
 
       ,initApp=function(){
         'use strict';
+        toggleUnused.addEventListener('change',toggleHideUnused,false);
+        toggleUnused.addEventListener('change',checkInput,false);
         vdcSelect.addEventListener('change',initLayout,false);
         initLayout();
       }
